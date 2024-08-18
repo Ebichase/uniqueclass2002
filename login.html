@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unique class 2002</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="src/styles/designsystem.css">
+    <link rel="stylesheet" href="src/styles/login.css">
+    <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="navbar container">
+            <div class="navbar__logo">
+                <img src="src/images/LogoDark.svg" class="navbar__logo--image"></img>
+                <div class="navbar__logo-text">Unique class</div>
+            </div>
+            <div class="icon-home">
+                <a href="index.html"><i class="bi bi-arrow-left-short"></i></a>
+                <a href="index.html" class="home">Home</a>
+            </div>
+        </div>
+
+
+        <div class="account-page">
+            <div id="home" class="grid container ">
+                <img src="src/images/post fellowship.jpg " class="sectionOne__right responsive-image ">
+                <div>
+                    <div class="form-container ">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="loginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+
+                        <form id="regForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Confirm Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="row container ">
+            <div class="col">
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla in, ipsum sint cum a iste unde quia velit possimus officiis saepe minus doloremque expedita, corrupti ad voluptatem impedit odit vitae?
+                </div>
+            </div>
+
+            <div class="col center">
+                <h3>Links
+                    <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="#home ">Home</a></li>
+                    <li><a href="#about ">About Us</a></li>
+                    <li><a href="#contact ">Contact Us</a></li>
+                    <li><a href="#gallery ">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="col flex ">
+                <h3>Contact info
+                    <div class="underline "><span></span></div>
+                </h3>
+                <p>ITPL Road</p>
+                <p>Whitfield,Bangalore</p>
+                <p>karnataka, PIN 560066, Port Harcourt</p>
+                <p class="email-id ">info.uniqueclass@gmail.com</p>
+                <h4>08039370009</h4>
+
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook "></i>
+                    <i class="fa-brands fa-twitter "></i>
+                    <i class="fa-brands fa-square-instagram "></i>
+                    <i class="fa-solid fa-phone "></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <p class="copyright ">Unigue class 2002 of TLSS - All Rights Reserved. Designed by Chase</p>
+    </footer>
+
+
+
+
+    <script>
+        var loginForm = document.getElementById("loginForm");
+        var regForm = document.getElementById("regForm");
+        var indicator = document.getElementById("indicator");
+
+        function register() {
+            regForm.style.transform = "translateX(0px)";
+            loginForm.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(50px)";
+        }
+
+        function login() {
+            regForm.style.transform = "translateX(300px)";
+            loginForm.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(-50px)";
+        }
+    </script>
+
+</body>
+
+</html>
